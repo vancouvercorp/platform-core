@@ -1,0 +1,16 @@
+{
+  "endpoint": "/health",
+  "interval_seconds": 30,
+  "timeout_seconds": 5,
+  "retries": 3,
+  "checks": [
+    "database",
+    "cache",
+    "message_queue"
+  ],
+  "metadata": {
+    "version": "1.0.0",
+    "author": "Bob Martinez",
+    "description": "Health check configuration for platform-core services"
+  }
+}
